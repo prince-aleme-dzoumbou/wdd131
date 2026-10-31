@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+    --bg-main: #121212;
+    --bg-card: #1e1e1e;
+    --primary-burgundy: #6d071a;
+    --light-burgundy: #a31d3d;
+    --text-main: #f5f5f5;
+    --text-muted: #b3b3b3;
+    --border-color: #2a2a2a;
+    --radius: 12px;
+    --transition: all .3s ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-main);
+    color: var(--text-main);
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--bg-card);
+    border-bottom: 2px solid var(--primary-burgundy);
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+/* NAVIGATION */
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    background-color: rgba(0, 0, 0, .3);
+    padding: .75rem 1.5rem;
+    border-radius: var(--radius);
+    width: max-content;
+    margin: auto;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 500;
+    padding: .5rem .75rem;
+    border-radius: 6px;
+    transition: var(--transition);
+}
+
+nav a:hover {
+    background-color: var(--primary-burgundy);
+    color: white;
+}
+
+nav a:focus {
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+/* MAIN */
+
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.profile-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+/* CARDS */
+
+.card {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,.5);
+    transition: transform .3s ease;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card-header {
+    background-color: var(--primary-burgundy);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+/* ABOUT */
+
+.bio-block {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
+.profile-img {
+    width: 140px;
+    border-radius: 8px;
+    border: 2px solid var(--primary-burgundy);
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: var(--border-color);
+    margin: 1.5rem 0;
+}
+
+/* COUNTRY */
+
+.location-block h3 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.location-details {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.flag-container {
+    width: 150px;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.flag-container img {
+    border-radius: 4px;
+    border: 1px solid var(--border-color);
+}
+
+figcaption {
+    margin-top: .5rem;
+    font-size: .8rem;
+    color: var(--text-muted);
+}
+
+/* RESOURCES */
+
+.resources-list {
+    list-style: none;
+}
+
+.resources-list li {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.resources-list li:last-child {
+    border-bottom: none;
+}
+
+.resources-list a {
+    display: block;
+    padding: .8rem 0;
+    color: var(--text-main);
+    text-decoration: none;
+    transition: var(--transition);
+}
+
+.resources-list a:hover {
+    color: var(--light-burgundy);
+    padding-left: 6px;
+}
+
+.resources-list a:focus {
+    outline: 2px solid white;
+    outline-offset: 3px;
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 4rem;
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--bg-card);
+    border-top: 1px solid var(--border-color);
+}
+
+footer p {
+    margin-bottom: .5rem;
+}
+
+#lastModified {
+    color: #e6b800;
+    font-weight: 600;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        width: 100%;
+        gap: .5rem;
+    }
+
+    .grid-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .bio-block,
+    .location-details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
