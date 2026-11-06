@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    background-color: #c33f3f;
+    margin: 0;
+}
+
+header {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.card h2 {
+    color: #c33f3f;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
