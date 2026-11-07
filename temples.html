@@ -1,0 +1,119 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore a collection of beautiful temples around the world.">
+    <meta name="author" content="Prince Alème Dzoumbou">
+
+    <title>Temple Picture | WDD 131</title>
+
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    
+    <link rel="stylesheet" href="styles/temples.css">
+    <link rel="stylesheet" href="styles/temples-large.css">
+
+    
+    <script src="scripts/temples.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <a href="temples.html" class="logo">Temple <span>Album</span></a>
+
+            <button id="menu-button" aria-label="Open navigation menu" aria-expanded="false">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
+
+            <nav class="navigation">
+                <a href="temples.html" class="active">Home</a>
+                <a href="#temple-gallery">Old</a>
+                <a href="#temple-gallery">New</a>
+                <a href="#temple-gallery">Large</a>
+                <a href="#temple-gallery">Small</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="intro">
+            <p class="subtitle">A COLLECTION OF SACRED PLACES</p>
+            <h1>Temple Gallery</h1>
+            <p class="intro-text">
+                Discover the beauty, architecture, and peaceful atmosphere
+                of temples around the world.
+            </p>
+        </section>
+
+        <section class="gallery" id="temple-gallery">
+
+            <figure>
+                <img src="images/saltlake.jpg" alt="Salt Lake Temple in Utah" loading="lazy" width="600" height="400">
+                <figcaption>Salt Lake Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/washington_dc_temple.jpeg" alt="Washington DC Temple surrounded by trees" loading="lazy" width="600" height="400">
+                <figcaption>Washington D.C. Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/6-Rome-Temple.jpg" alt="Rome Italy Temple" loading="lazy" width="600" height="400">
+                <figcaption>Rome Italy Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/paris-france-temple.jpg" alt="Paris France Temple" loading="lazy" width="600" height="400">
+                <figcaption>Paris France Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/accra-ghana-temple.jpg" alt="Accra Ghana Temple" loading="lazy" width="600" height="400">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/johannesburg-south-africa-temple.jpg" alt="Johannesburg South Africa Temple" loading="lazy" width="600" height="400">
+                <figcaption>Johannesburg Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/nauvoo-temple.jpg" alt="Nauvoo Illinois Temple" loading="lazy" width="600" height="400">
+                <figcaption>Nauvoo Illinois Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/provo-utah-temple.jpg" alt="Provo Utah Temple" loading="lazy" width="600" height="400">
+                <figcaption>Provo Utah Temple</figcaption>
+            </figure>
+
+            <figure>
+                <img src="images/washington_dc_temple.jpeg" alt="Aba Nigeria Temple" loading="lazy" width="600" height="400">
+                <figcaption>Aba Nigeria Temple</figcaption>
+            </figure>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="current-year"></span>
+            Prince Alème Dzoumbou | WDD 131 | Brazzaville, Republic of the Congo
+        </p>
+
+        <p class="modified">
+            Last Modification: <span id="last-modified"></span>
+        </p>
+    </footer>
+
+</body>
+</html>
