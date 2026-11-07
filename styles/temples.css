@@ -1,6 +1,3 @@
-
-/* GENERAL SETTINGS */
-
 * {
     margin: 0;
     padding: 0;
@@ -190,7 +187,7 @@ footer {
 }
 
 
-/* HAMBURGER ANIMATION */
+/* HAMBURGER ANIM */
 
 #menu-button.menu-open .hamburger:first-child {
     transform: translateY(9px) rotate(45deg);

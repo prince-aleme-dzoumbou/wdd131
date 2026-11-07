@@ -1,6 +1,3 @@
-
-// SELECT HTML ELEMENTS
-
 const menuButton = document.querySelector("#menu-button");
 const navigation = document.querySelector(".navigation");
 
@@ -23,7 +20,7 @@ menuButton.addEventListener("click", () => {
 
 });
 
-// CLOSE MENU AFTER CLICKING A LINK
+// CLOSE MENU
 
 const navLinks = document.querySelectorAll(".navigation a");
 
@@ -46,7 +43,7 @@ const currentYear = document.querySelector("#current-year");
 
 currentYear.textContent = new Date().getFullYear();
 
-// LAST MODIFIED DATE
+// LAST MODIFIED
 
 const lastModified = document.querySelector("#last-modified");
 
