@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover the Republic of the Congo, its geography, culture, capital city and weather.">
+    <meta name="author" content="Prince Alème Dzoumbou">
+
+    <title>Republic of the Congo | WDD 131</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Republic of the Congo</h1>
+    </header>
+
+    <main>
+        <div class="hero-layout">
+
+            <picture class="hero-image">
+                <source
+                    media="(min-width: 700px)"
+                    srcset="images/brazza-large.png">
+                <img
+                    src="images/congo-small.jpg"
+                    alt="Beautiful landscape of the Republic of the Congo"
+                    width="800"
+                    height="600">
+            </picture>
+
+            <section class="data card">
+                <h2>Data</h2>
+
+                <div class="data-list">
+                    <p><span>Area:</span> 342,000 km²</p>
+                    <p><span>Population:</span> 6,484,437</p>
+                    <p><span>Capital:</span> Brazzaville</p>
+                    <p><span>Languages:</span> French, Lingala, Kituba</p>
+                    <p><span>Currency:</span> Central African CFA franc</p>
+                    <p><span>Time Zone:</span> UTC+1</p>
+                    <p><span>Calling Code:</span> +242</p>
+                    <p><span>Internet TLD:</span> .cg</p>
+                </div>
+            </section>
+
+            <section class="weather card">
+                <h2>Weather</h2>
+
+                <img
+                    class="weather-icon"
+                    src="images/weather.jpg"
+                    alt="Partly cloudy weather icon"
+                    width="60"
+                    height="60">
+
+                <div class="weather-list">
+                    <p><span>Temperature:</span> <span id="temperature">28</span> °C</p>
+                    <p><span>Conditions:</span> Partly Cloudy</p>
+                    <p><span>Wind:</span> <span id="wind-speed">8</span> km/h</p>
+                    <p><span>Wind Chill:</span> <span id="wind-chill">N/A</span></p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>
+            &copy; <span id="current-year"></span>
+            Prince Alème Dzoumbou |
+            Republic of the Congo
+        </p>
+
+        <p class="modified">
+            Last Modification:
+            <span id="last-modified"></span>
+        </p>
+    </footer>
+
+</body>
+</html>
