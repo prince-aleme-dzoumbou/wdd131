@@ -10,3 +10,8 @@ localStorage.setItem("reviewCount", reviewCount);
 
 // Display the count
 document.querySelector("#reviewCounter").textContent = reviewCount;
+
+// Display last modification date
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector("#lastModified").textContent = document.lastModified;
+});

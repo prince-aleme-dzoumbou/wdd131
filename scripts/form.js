@@ -27,6 +27,7 @@ const products = [
     }
 ];
 
+// Display products
 const productSelect = document.querySelector("#product");
 
 products.forEach((product) => {
@@ -36,4 +37,9 @@ products.forEach((product) => {
     option.textContent = product.name;
 
     productSelect.appendChild(option);
+});
+
+// Display last modification date
+document.addEventListener("DOMContentLoaded", () => {
+    document.querySelector("#lastModified").textContent = document.lastModified;
 });
